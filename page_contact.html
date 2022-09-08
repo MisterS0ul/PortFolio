@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style2.css"/>
+        <title>Contact</title>
+    </head>
+        <body>
+            <div class="Thomas_Bonhomme">
+                <p>THOMAS BONHOMME</p>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav_list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#container2">WORK</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            
+            </nav>            
+            
+            <img class="logo" src="images/Logo.png" alt="Logo">
+
+            <div class="contactez-nous">
+                <h1>Contactez-moi</h1>
+                <p>Une question ? Une demande ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+                <form action="contact.php" method="post">
+                <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Prénom" required>
+                </div>
+                <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                </div>
+                <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Tapez ici" required></textarea>
+                </div>
+                <div>
+                <button type="submit">Envoyer mon message</button>
+                </div>
+                </form>
+                </div>
+            </div>
+    </body>
+</html>

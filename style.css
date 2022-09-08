@@ -1,0 +1,259 @@
+html{scroll-behavior:smooth}
+@font-face {
+        font-family: 'Coco Sharp';
+        font-style: bold;
+        src: url('Coco-Sharp-Bold-trial.ttf');
+}
+
+@font-face {
+    font-family: 'Coco Sharp';
+    font-style: italic;
+    src: url('Coco-Sharp-Italic-trial.ttf');
+}
+  
+@font-face {
+    font-family: 'Coco Sharp';
+    font-style: normal;
+    src: url('Coco-Sharp-Regular-trial.ttf.ttf');
+}
+
+@font-face {
+    font-family: 'Coco Sharp';
+    font-weight:100;
+    src: url('Coco-Sharp-Light-trial.ttf');
+}
+
+.Thomas_Bonhomme
+{
+    position: fixed;
+    display: flex;
+    margin-left: 5%;
+    top: 3%;
+    font-family: 'Coco Sharp', Helvetica, sans-serif;
+    font-size: 12pt;
+    font-style: bold;
+    line-height: 0%;
+    z-index: 1;
+}
+
+.navbar
+{
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    top: 1%;
+    right: 5%;
+    z-index: 1;
+}
+
+.nav_list
+{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav_list li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 26px 30px;
+}
+
+.nav_list li a
+{
+    text-decoration: none;
+    font-family: 'Coco Sharp';
+    font-weight: 100;
+    font-size: 13px;
+    color: black;
+}
+
+.nav_list li a:visited
+{
+    color:black;
+}
+.nav_list li a:hover 
+{
+    font-weight: bold;
+    color: #37bc9e;
+}
+
+.photo_profil
+{
+    position: relative;
+    display: block;
+    width: 500px;
+    height: auto;
+    top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: transi 800ms;
+}
+
+.photo_profil:hover
+{
+    width: 510px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo
+{
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    width: 2%;
+    height: auto;
+
+}
+.container
+{
+    height: 4px;
+    width: 32px;
+    background-color: #37bc9e;
+    margin-left: auto;
+    margin-right: auto;
+    top: 138px;
+    position:relative;
+    border-radius: 10px;
+    animation: transi 2000ms, battement 800ms infinite;
+
+}
+
+.fleche
+{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30px;
+    height: auto;
+    display:block;
+    position: relative;
+    top: 100px;
+    animation: transi 2000ms, battement 800ms infinite ;
+}
+
+.about
+{
+    font-family: 'Coco Sharp';
+    font-weight: 100;
+    text-align: center;
+    top: 110px;
+    position: relative;
+}
+
+#container2
+{
+    position: absolute;
+    width: 100%;
+    height: 940px;
+    background-color: #88d1c0;
+    top: 940px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.cerf
+{
+    width: auto;
+    height: 400px;
+    top: 1050px;
+    position: absolute;
+    left: 19%;
+}
+
+.ours
+{
+    width: auto;
+    height: 400px;
+    top: 1050px;
+    position: absolute;
+    right: 19%;
+}
+
+.distorsion
+{
+    width: auto;
+    height: 450px;
+    top: 1470px;
+    left: 19%;
+    position: absolute;
+}
+
+.femme
+{
+    width: auto;
+    height: 450px;
+    top: 1470px;
+    right: 19%;
+    position: absolute;
+}
+
+.kindred
+{
+    width: auto;
+    height: 460px;
+    top: 1940px;
+    left: 19%;
+    position: absolute;
+}
+
+.camera
+{
+    width: auto;
+    height: 300px;
+    top: 2420px;
+    left: 19%;
+    position: absolute;
+    
+}
+
+.stress
+{
+    width: auto;
+    height: 400px;
+    top: 1500px;
+    left: 44.5%;
+    position: absolute;
+}
+
+.affiche
+{
+    width: auto;
+    height: 450px;
+    top: 1940px;
+    right: 19%;
+    position: absolute;
+    
+}
+
+body
+{
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes transi {
+    0% {
+        transform: translateY(3vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes battement {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
