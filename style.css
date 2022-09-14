@@ -93,8 +93,6 @@ html{scroll-behavior:smooth}
 
 .photo_profil:hover
 {
-    width: 510px;
-    height: auto;
     cursor: pointer;
 }
 
@@ -112,10 +110,9 @@ html{scroll-behavior:smooth}
     height: 4px;
     width: 32px;
     background-color: #37bc9e;
-    margin-left: auto;
-    margin-right: auto;
-    top: 138px;
-    position:relative;
+    top: 600px;
+    left: 900px;
+    position:absolute;
     border-radius: 10px;
     animation: transi 2000ms, battement 800ms infinite;
 
@@ -128,18 +125,20 @@ html{scroll-behavior:smooth}
     width: 30px;
     height: auto;
     display:block;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 566px;
+    left: 901px;
     animation: transi 2000ms, battement 800ms infinite ;
 }
 
 .about
 {
-    font-family: 'Coco Sharp';
+    font-family: 'Coco Sharp', Helvetica, sans-serif;
     font-weight: 100;
     text-align: center;
-    top: 110px;
-    position: relative;
+    top: 610px;
+    left: 850px;
+    position: absolute;
 }
 
 #container2
@@ -149,7 +148,7 @@ html{scroll-behavior:smooth}
     height: 940px;
     background-color: #88d1c0;
     top: 940px;
-    z-index: 0;
+    z-index: -999;
     opacity: 0;
 }
 
@@ -157,27 +156,90 @@ html{scroll-behavior:smooth}
 {
     width: auto;
     height: 400px;
-    top: 1050px;
-    position: absolute;
+    transition: .5s ease; 
+}
+
+.container3{
+    width: 566.42px;
+    height: 400px;
     left: 19%;
+    top: 460px;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay{
+    transition: .5s ease;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-400%);
+    text-align: center;
+}
+
+.text{
+    background-color: #37bc9e;
+    color: white;
+    font-size: 16px;
+    font-family: 'Coco-Sharp-Bold-trial', Helvetica, sans-serif;
+    padding: 16px 32px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.container3:hover .cerf {
+    opacity: 0.3;
+}
+
+.container3:hover .text{
+    opacity: 1;
 }
 
 .ours
 {
     width: auto;
     height: 400px;
-    top: 1050px;
+    transform: .5s ease;
+}
+
+.container4{
+    width: 566.42px;
+    height: 400px;
+    left: 20%;
+    top: 460px;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay{
+    transition: .5s ease;
     position: absolute;
-    right: 19%;
+    left: 50%;
+    transform: translate(-50%,-400%);
+    text-align: center;
+}
+
+.container4:hover .ours{
+    opacity: 0.3;
+}
+
+.container4:hover .text{
+    opacity: 1;
 }
 
 .distorsion
 {
     width: auto;
     height: 450px;
-    top: 1470px;
-    left: 19%;
-    position: absolute;
+    transform: .5s ease;
+}
+
+.container5{
+    width: 566.42px;
+    height: 400px;
+    
+    top: 960px;
+    position: relative;
+    display: inline-block;
 }
 
 .femme
@@ -256,4 +318,8 @@ body
     100% {
         transform: scale(0.8);
     }
+}
+
+@keyframes degrade {
+    
 }
