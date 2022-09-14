@@ -98,7 +98,7 @@ html{scroll-behavior:smooth}
 
 .logo
 {
-    position: absolute;
+    position: fixed;
     left: 5%;
     bottom: 3%;
     width: 2%;
@@ -152,18 +152,72 @@ html{scroll-behavior:smooth}
     opacity: 0;
 }
 
-.cerf
-{
-    width: auto;
-    height: 400px;
-    transition: .5s ease; 
+.tab{
+    margin-left: 19% ;
+    margin-right: 19% ;
+    top: 940px;
+    position: absolute;
 }
-
 .container3{
     width: 566.42px;
     height: 400px;
-    left: 19%;
-    top: 460px;
+    left: 0%;
+    position: relative;
+    display: inline-block;
+}
+
+.container4{
+    width: 566.42px;
+    height: 400px;
+    float: right;
+    position: relative;
+}
+
+.container5{
+    width: 452px;
+    height: 450px;
+    float: left;
+    position: relative;
+}
+
+.container6{
+    width: 316px;
+    height: 450px;
+    left: 20px;
+    top: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.container7{
+    width: 818px;
+    height: 460px;
+    
+    position: relative;
+}
+
+.container8{
+    width: 400px;
+    height: 300px;
+    left: 20%;
+    top: 1460px;
+    position: relative;
+    display: inline-block;
+}
+
+.container9{
+    width: 340px;
+    height: 400px;
+    left: 0%;
+    top: -500px;
+    position: relative;
+    display: inline-block;
+}
+.container10{
+    width: 318px;
+    height: 450px;
+    left: 20%;
+    top: 560px;
     position: relative;
     display: inline-block;
 }
@@ -194,30 +248,6 @@ html{scroll-behavior:smooth}
     opacity: 1;
 }
 
-.ours
-{
-    width: auto;
-    height: 400px;
-    transform: .5s ease;
-}
-
-.container4{
-    width: 566.42px;
-    height: 400px;
-    left: 20%;
-    top: 460px;
-    position: relative;
-    display: inline-block;
-}
-
-.overlay{
-    transition: .5s ease;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-400%);
-    text-align: center;
-}
-
 .container4:hover .ours{
     opacity: 0.3;
 }
@@ -226,67 +256,111 @@ html{scroll-behavior:smooth}
     opacity: 1;
 }
 
+.container5:hover .distorsion {
+    opacity: 0.3;
+}
+
+.container5:hover .text{
+    opacity: 1;
+}
+
+.container6:hover .stress {
+    opacity: 0.3;
+}
+
+.container6:hover .text{
+    opacity: 1;
+}
+
+.container7:hover .femme {
+    opacity: 0.3;
+}
+
+.container7:hover .text{
+    opacity: 1;
+}
+
+.container8:hover .kindred {
+    opacity: 0.3;
+}
+
+.container8:hover .text{
+    opacity: 1;
+}
+
+.container9:hover .camera {
+    opacity: 0.3;
+}
+
+.container9:hover .text{
+    opacity: 1;
+}
+
+.container10:hover .affiche {
+    opacity: 0.3;
+}
+
+.container10:hover .text{
+    opacity: 1;
+}
+
+.cerf
+{
+    width: auto;
+    height: 400px;
+    transition: .5s ease; 
+}
+
+.ours
+{
+    width: auto;
+    height: 400px;
+    transition: .5s ease;
+}
+
+
+
 .distorsion
 {
     width: auto;
     height: 450px;
-    transform: .5s ease;
+    transition: .5s ease;
 }
 
-.container5{
-    width: 566.42px;
-    height: 400px;
-    
-    top: 960px;
-    position: relative;
-    display: inline-block;
-}
 
 .femme
 {
     width: auto;
     height: 450px;
-    top: 1470px;
-    right: 19%;
-    position: absolute;
+    transition: .5s ease;
 }
 
 .kindred
 {
     width: auto;
     height: 460px;
-    top: 1940px;
-    left: 19%;
-    position: absolute;
+    transition: .5s ease;
 }
 
 .camera
 {
     width: auto;
     height: 300px;
-    top: 2420px;
-    left: 19%;
-    position: absolute;
-    
+    transition: .5s ease;
 }
 
 .stress
 {
     width: auto;
     height: 400px;
-    top: 1500px;
-    left: 44.5%;
-    position: absolute;
+    transition: .5s ease;
 }
 
 .affiche
 {
     width: auto;
     height: 450px;
-    top: 1940px;
-    right: 19%;
-    position: absolute;
-    
+    transition: .5s ease;
 }
 
 body
@@ -318,8 +392,4 @@ body
     100% {
         transform: scale(0.8);
     }
-}
-
-@keyframes degrade {
-    
 }
