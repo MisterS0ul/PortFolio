@@ -40,7 +40,6 @@ html{scroll-behavior:smooth}
 {
     text-align: center;
     position: fixed;
-    cursor: pointer;
     top: 1%;
     right: 5%;
     z-index: 1;
@@ -67,6 +66,7 @@ html{scroll-behavior:smooth}
     font-weight: 100;
     font-size: 13px;
     color: black;
+    cursor: pointer;
 }
 
 .nav_list li a:visited
@@ -158,66 +158,60 @@ html{scroll-behavior:smooth}
     top: 940px;
     position: absolute;
 }
-.container3{
+.containercerf{
     width: 566.42px;
     height: 400px;
-    left: 0%;
     position: relative;
     display: inline-block;
+    
 }
 
-.container4{
+.containerours{
     width: 566.42px;
     height: 400px;
     float: right;
     position: relative;
 }
 
-.container5{
+.containerdistorsion{
     width: 452px;
     height: 450px;
-    float: left;
-    position: relative;
-}
-
-.container6{
-    width: 316px;
-    height: 450px;
-    left: 20px;
-    top: 15px;
-    position: relative;
     display: inline-block;
-}
-
-.container7{
-    width: 818px;
-    height: 460px;
-    
     position: relative;
 }
 
-.container8{
-    width: 400px;
-    height: 300px;
-    left: 20%;
-    top: 1460px;
-    position: relative;
-    display: inline-block;
-}
-
-.container9{
+.containerstress{
     width: 340px;
     height: 400px;
-    left: 0%;
-    top: -500px;
+    left: 20px;
+    top: -20px;
     position: relative;
     display: inline-block;
 }
-.container10{
+
+.containerfemme{
+    width: 316px;
+    height: 450px;
+    position: relative;
+    float: right;
+}
+
+.containerkindred{
+    width: 818px;
+    height: 460px;
+    position: relative;
+    display: inline-block;
+}
+
+.containercamera{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    float: left
+}
+.containeraffiche{
     width: 318px;
     height: 450px;
-    left: 20%;
-    top: 560px;
     position: relative;
     display: inline-block;
 }
@@ -228,6 +222,7 @@ html{scroll-behavior:smooth}
     left: 50%;
     transform: translate(-50%,-400%);
     text-align: center;
+    
 }
 
 .text{
@@ -240,70 +235,82 @@ html{scroll-behavior:smooth}
     opacity: 0;
 }
 
-.container3:hover .cerf {
+.text a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.containercerf:hover .cerf {
     opacity: 0.3;
 }
 
-.container3:hover .text{
+.containercerf:hover .text{
     opacity: 1;
 }
 
-.container4:hover .ours{
+.containerours:hover .ours{
     opacity: 0.3;
 }
 
-.container4:hover .text{
+.containerours:hover .text{
     opacity: 1;
 }
 
-.container5:hover .distorsion {
+.containerdistorsion:hover .distorsion {
     opacity: 0.3;
 }
 
-.container5:hover .text{
+.containerdistorsion:hover .text{
     opacity: 1;
 }
 
-.container6:hover .stress {
+.containerstress:hover .stress {
     opacity: 0.3;
 }
 
-.container6:hover .text{
+.containerstress:hover .text{
     opacity: 1;
 }
 
-.container7:hover .femme {
+.containerfemme:hover .femme {
     opacity: 0.3;
 }
 
-.container7:hover .text{
+.containerfemme:hover .text{
     opacity: 1;
 }
 
-.container8:hover .kindred {
+.containerkindred:hover .kindred {
     opacity: 0.3;
 }
 
-.container8:hover .text{
+.containerkindred:hover .text{
     opacity: 1;
 }
 
-.container9:hover .camera {
+.containercamera:hover .camera {
     opacity: 0.3;
 }
 
-.container9:hover .text{
+.containercamera:hover .text{
     opacity: 1;
 }
 
-.container10:hover .affiche {
+.containeraffiche:hover .affiche {
     opacity: 0.3;
 }
 
-.container10:hover .text{
+.containeraffiche:hover .text{
     opacity: 1;
 }
 
+.overlay:hover {
+    cursor: pointer;
+}
+
+.text a:visited {
+    color: #eeeeee;
+}
 .cerf
 {
     width: auto;

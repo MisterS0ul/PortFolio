@@ -1,0 +1,100 @@
+html{scroll-behavior:smooth}
+@font-face {
+        font-family: 'Coco Sharp';
+        font-style: bold;
+        src: url('Coco-Sharp-Bold-trial.ttf');
+}
+
+@font-face {
+    font-family: 'Coco Sharp';
+    font-style: italic;
+    src: url('Coco-Sharp-Italic-trial.ttf');
+}
+  
+@font-face {
+    font-family: 'Coco Sharp';
+    font-style: normal;
+    src: url('Coco-Sharp-Regular-trial.ttf.ttf');
+}
+
+@font-face {
+    font-family: 'Coco Sharp';
+    font-weight:100;
+    src: url('Coco-Sharp-Light-trial.ttf');
+}
+
+.Thomas_Bonhomme
+{
+    position: fixed;
+    display: flex;
+    margin-left: 5%;
+    top: 3%;
+    font-family: 'Coco Sharp', Helvetica, sans-serif;
+    font-size: 12pt;
+    font-style: bold;
+    line-height: 0%;
+    z-index: 1;
+}
+
+.navbar
+{
+    text-align: center;
+    position: fixed;
+    top: 1%;
+    right: 5%;
+    z-index: 1;
+}
+
+.nav_list
+{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav_list li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 26px 30px;
+}
+
+.nav_list li a
+{
+    text-decoration: none;
+    font-family: 'Coco Sharp';
+    font-weight: 100;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+}
+
+.nav_list li a:visited
+{
+    color:black;
+}
+.nav_list li a:hover 
+{
+    font-weight: bold;
+    color: #37bc9e;
+}
+
+.logo
+{
+    position: fixed;
+    left: 5%;
+    bottom: 3%;
+    width: 2%;
+    height: auto;
+
+}
+
+.ours {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: 100px;
+    height: auto;
+    width: 600px;
+}
